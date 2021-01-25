@@ -66,7 +66,9 @@ img.header-logo {
   padding-top: 90px;
 }
 .portfolio-title:after,
-.feature-title:after {
+.feature-title:after,
+.profile-title:after,
+.contact-title:after{
   content: "";
   display: block;
   margin: 8px auto 0 auto;
@@ -166,7 +168,7 @@ img.header-logo {
   display: flex;
   flex-wrap: wrap;
 }
-.strength-1, 
+.strength-1,
 .strength-3{
   width: 320px;
   text-align: center;
@@ -194,17 +196,105 @@ font-size: 60px;
 }
 
 
-
 .profile {
   width: 100%;
-  height: 400px;
   background-color: #eceff1;
 }
+.profile-container{
+  width: 1024px;
+  margin: auto;
+}
+.profile-title{
+  font-size: 32px;
+  color: #000000;
+  text-align: center;
+  padding-top: 90px;
+}
+.profile-text{
+  text-align: center;
+  font-size: 16px;
+  color: #000000;
+  padding-top: 30px;
+}
+.profile-contents{
+  width: 1024px;
+  margin: auto;
+  padding:30px 0 90px 0;
+  display: flex;
+}
+.profile-image{
+  width: 512px;
+  text-align: center;
+}
+.profile-image img{
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+}
+.profile-introduction{
+  width: 512px;
+}
+.profile-myname,
+.profile-myskill{
+  font-size: 20px;
+}
+.profile-myname-text,
+ .profile-myskill-text{
+  font-size: 16px;
+  color:  #000000;
+  padding: 5px 0 20px 0 ;
+}
+
 
 .contact {
   width: 100%;
-  height: 400px;
 }
+.contact-container{
+  width: 800px;
+  margin: auto;
+}
+.contact-title{
+  font-size: 32px;
+  color: #000000;
+  text-align: center;
+  padding-top: 90px;
+}
+.contact-text{
+  text-align: center;
+  font-size: 16px;
+  color: #000000;
+  padding-top: 30px;
+}
+.contact-contents{
+  width: 800px;
+  margin: auto;
+  padding:30px 0 90px 0;
+  display: flex;
+}
+.contact-details{
+  width: 200px;
+  margin: auto;
+}
+.contact-mail, .contact-tell,
+.contact-social-title{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.contact-address, .contact-number{
+  padding: 5px 0 20px 0;
+}
+.contact-social{
+  width: 200px;
+  margin: 0 auto;
+}
+.contact-social-icon i{
+  font-size: 50px;
+  padding-top: 5px;
+}
+.contact-social-icon i:nth-child(2){
+  padding: 0 20px;
+}
+
 
 footer {
   width: 100%;
@@ -217,3 +307,120 @@ footer {
   font-size: 16px;
   line-height: 60px;
 }
+@media screen and (max-width: 768px){
+
+  header{
+    height: 50px;
+  }
+  .header-container{
+    width: 90%;
+    align-items: end;
+  }
+  nav{
+    display: none;
+  }
+  img.header-logo{
+    height: 50px;
+  }
+ .hamburger-menu{
+  position: relative;
+	width: 40px;
+  height: 40px;
+  margin: 5px 0 5px 0;
+  border: 1px solid #FAFAFA;
+ }
+ .ham_line {
+	position: absolute;
+	left: 10px;
+	width: 20px;
+	height: 2px;
+  background-color: #fff;
+}
+.ham_line1 {
+	top: 10px;
+}
+.ham_line2 {
+	top: 18px;
+}
+.ham_line3 {
+	top: 26px;
+}
+
+.main-visual{
+  background-image: url(img/code.png);
+}
+.main-visual-title{
+font-size: 40px;
+}
+.main-visual-text{
+font-size: 18px;
+}
+
+.portfolio-container{
+  width: 90%;
+}
+.portfolio-contents{
+  width: 90%;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+}
+.portfolio-content-1, .portfolio-content-3,
+.portfolio-content-5{
+  display: none;
+}
+.portfolio-content-2,
+.portfolio-content-4 {
+  margin-bottom: 10px;
+}
+
+.feature-container{
+  width: 90%;
+}
+.feature-contents{
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+}
+.strength-1, .strength-2{
+  margin-bottom: 10px; 
+}
+
+.profile-container{
+  width: 90%;
+}
+.profile-contents{
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+}
+.profile-introduction{
+  text-align: center;
+}
+.profile-myname, .profile-myskill{
+  padding:  20px 0 5px 0;
+}
+
+.contact-container{
+  width: 90%;
+  margin:auto;
+}
+.contact-contents{
+  width: 90%;
+  flex-direction: column;
+ text-align: center;
+}
+.contact-social-icon{
+  font-size: 50px;
+}
+.contact-social-icon i:nth-child(2){
+  padding: 0 8px;
+}
+
+
+
+}
+
+
+
+
